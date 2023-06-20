@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+<title>Upload form</title>
+
+{% block content %}
+
+<h2> Student Form</h2>
+<hr>
+
+<h3> All fields are required</h3>
+<hr>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Insert Student Record">
+</form>
+<hr>
+
+{% endblock %}
